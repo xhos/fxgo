@@ -27,6 +27,15 @@ I plan to use sources such as official central banks and federal reserves. Insti
 
 [exchange-api](https://github.com/fawazahmed0/exchange-api) - 200+ currencies, but the sources are unclear. Most likely uses scrapers on schedule. Not exactly self-hostable as the author doesn't include the scraper setup, but might be good enough if you just want the data for a small-scale project.
 
+## Development
+
+I use a [Nix](https://nixos.org) devshell for development. This is not strictly necessary, but it includes git hooks and nice aliases. Just run `nix develop` or `direnv allow` in the project root.
+
+Alternatively, you can install the dependencies manually:
+
+- go 1.25.1+
+- that's it :)
+
 ## Contribution
 
 PRs and issues are highly welcome.
