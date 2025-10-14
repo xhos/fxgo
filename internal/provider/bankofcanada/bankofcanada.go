@@ -16,6 +16,10 @@ type Provider struct {
 	client  *common.HTTPClient
 }
 
+type response struct {
+	Observations []map[string]any `json:"observations"`
+}
+
 func New() *Provider {
 	return &Provider{
 		baseURL: "https://www.bankofcanada.ca/valet",
